@@ -1,0 +1,175 @@
+.erti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 4rem;
+}
+.img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.comments {
+  width: 100%;
+  padding: 1rem;
+  height: auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 15px;
+}
+p {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: rgba(103, 114, 126, 1);
+}
+.forreply {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(245, 246, 250, 1);
+  border-radius: 10px;
+  height: 40px;
+  width: 30%;
+  justify-content: center;
+}
+h6 {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(83, 87, 182, 1);
+  cursor: pointer;
+}
+h5 {
+  font-size: 20px;
+  color: rgba(197, 198, 239, 1);
+  cursor: pointer;
+}
+.forreaplyy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.users {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: rgba(51, 66, 83, 1);
+}
+span {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: rgba(103, 114, 126, 1);
+}
+#user {
+  background: rgba(83, 87, 182, 1);
+  color: white;
+  border: none;
+  height: 19px;
+  width: 35px;
+}
+.input-line {
+  width: 100%;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  align-items: center;
+}
+input {
+  border: 1px solid rgba(233, 235, 240, 1);
+  width: 95%;
+  height: 96px;
+  border-radius: 8px;
+  border-width: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+.images-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+#send {
+  border: none;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  background: rgba(83, 87, 182, 1);
+  border-radius: 10px;
+  height: 48px;
+  width: 30%;
+  color: white;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+#send:hover {
+  background: rgba(197, 198, 239, 1);
+}
+.coment {
+  margin-top: 20px;
+}
+*button:hover {
+  background: rgba(197, 198, 239, 1);
+}
+@media (min-width: 586px) {
+  .comments {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+  }
+  .forreply {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .forreaplyy {
+    position: absolute;
+    right: 40px;
+  }
+  .img{
+    position: absolute;
+    margin-bottom: 170px;
+  }
+  .first-line{
+    width: 80%;
+    margin-right: 160px;
+  }
+}
