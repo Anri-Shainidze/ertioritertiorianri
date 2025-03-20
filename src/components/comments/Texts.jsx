@@ -163,7 +163,7 @@ const Texts = () => {
             </div>
           </div>
 
-          {/* Reply input field */}
+
           {replyingTo === comment.id && (
             <div className="input-line">
               <input
@@ -184,7 +184,7 @@ const Texts = () => {
             </div>
           )}
 
-          {/* Render replies */}
+
           {comment.replies.length > 0 && (
             <div
               style={{
@@ -196,17 +196,17 @@ const Texts = () => {
               }}
             >
               {comment.replies.map((reply) => (
-                <div key={reply.id} className="coment">
-                  <div className="image">
+                <div key={reply.id} className="comments">
+                  <div className="img">
                     <img src={reply.avatar} alt="" />
-                    <p className="user">{reply.user}</p>
-                    {reply.isCurrentUser && <button id="users">you</button>}
+                    <p className="users">{reply.user}</p>
+                    {reply.isCurrentUser && <button id="user">you</button>}
                     <span>{reply.timeAgo}</span>
                   </div>
-                  <div className="text-line">
+                  <div className="first-line">
                     <p>{reply.content}</p>
                   </div>
-                  <div className="reply">
+                  <div className="forreply">
                     <div className="button">
                       <h5 onClick={() => handleVote(comment.id, reply.id, 1)}>
                         +
@@ -217,7 +217,7 @@ const Texts = () => {
                       </h5>
                     </div>
                     <div
-                      className="reply1"
+                      className="forreaplyy"
                       onClick={() => toggleReply(reply.id)}
                     >
                       <FaReply id="baba"/>
@@ -231,15 +231,14 @@ const Texts = () => {
         </div>
       ))}
 
-      {/* New comment input */}
-      <div className="input-line">
+      <div className="second-line">
         <input
           type="text"
           placeholder="Add a comment..."
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
         />
-        <div className="images-line">
+        <div className="imgs-line">
           <img src={logo3} alt="" />
           <button id="send" onClick={addComment}>
             SEND
